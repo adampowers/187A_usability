@@ -7,4 +7,12 @@ $(document).ready(function() {
   */
   $('.fancybox').fancybox();
 
+
+  $('#nav').onePageNav({
+  		currentClass	: 'focus',
+  		changeHash		: true
+  	});
+
 });
+
+ 

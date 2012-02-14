@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Generic Page</title>
-    <meta name="description" content="something good should go here">
-    <meta name="author" content="your name should go here">
+    <title>187A Usability - Kwan, Lyons, Powers</title>
+    <meta name="description" content="Usability evaluation of louisiana.edu for COGS 187A, WI '12 UCSD">
+    <meta name="author" content="Adam Powers | Jenny Lyons | Allan Kwan">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="stylesheets/lib/bootstrap.css" >
     <link rel="stylesheet" href="stylesheets/lib/jquery.fancybox.css" >
 
-
     <!-- Your Stylesheets -->
-    <link rel="stylesheet" href="stylesheets/main.css" >
-
+    <link rel="stylesheet/less" type="text/css" href="stylesheets/main.css" >
+    
+    <!-- Using LessCSS instead. -AP
+    <link rel="stylesheet" href="stylesheets/main.css" > -->
 
     <!--  jQuery http://jquery.com/ -->
     <script src="javascripts/lib/jquery-1.7.1.min.js"></script>
@@ -29,18 +30,314 @@
     <!-- Fancybox Lightbox http://fancyapps.com/fancybox/#examples -->
     <script src="javascripts/lib/jquery.fancybox.js"></script>
 
+    <!-- jQuery One-Page Nav Plugin http://trevordavis.net/blog/jquery-one-page-navigation-plugin -->
+    <script src="javascripts/lib/jquery.scrollTo.js"></script>
+    <script src="javascripts/lib/jquery.nav.min.js"></script>
+
+    <!-- LessCSS.org -->
+    <script src="javascripts/lib/less.js" type="text/javascript"></script>
 
     <!-- Your Javascripts -->
     <script src="javascripts/main.js"></script>
-
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="top">
+        <header>
+            <div id="titleWrapper">
+                <img id="leftStripes" src="images/lib/greenstripes.png" alt="////" />
+                    <span id="headerTop">USABILITY ASSESSMENT</span>
+                    <span id="headerBottom">LOUSIANA.EDU</span>
+                <img id="rightStripes" src="images/lib/redstripes.png" alt="\\\\\\" />
+            </div>
+		</header>
+		
+        <div id="main">
+            
+            <div id="menu" class="span1">
+                <ul id="nav">
+                    <li><a href="#top"><strong>top</strong></a></li>
+                    <li><a href="#visibility">visibility</a></li>
+                    <li><a href="#match">match</a></li>
+                    <li><a href="#control">control</a></li>
+                    <li><a href="#consistency">consistency</a></li>		
+                    <li><a href="#prevention">prevention</a></li>        
+                    <li><a href="#recognition">recognition</a></li>        
+                    <li><a href="#efficiency">efficiency</a></li>        
+                    <li><a href="#aesthetics">aesthetics</a></li>        
+                    <li><a href="#recovery">recovery</a></li>        
+                    <li><a href="#help">help</a></li>        
+                    <li><a href="#contact"><strong>contact</strong></a></li>        
+                </ul>
+            </div>
 
-      Put Stuff Here
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>Hello!
+                    <p>This is a usability evaluation of <a href="http://louisiana.edu">louisiana.edu</a> as 
+                    found on February 9th, 2012.
+                    <p>This evaluation was done according to <a href="http://www.useit.com/papers/heuristic/heuristic_list.html">Nielsen's 10 heuristics</a> for usability as part of a class assignment in COGS 187A, Winter '12.
+                    <p>This site is valid HTML5 and is powered by CSS3, <a href="http://twitter.github.com/bootstrap">Bootstrap</a>, <a href="http://jquery.com">jQuery</a> and <a href="http://lesscss.org">LESS</a>.
+                    <p>We'd like to think this page is a good deal more usable than the one we reviewed. Feel free to let us know if you agree!
+                </div>
+            </div>
 
-    </div> <!-- end container -->
+            <hr id="visibility">
+                <h1>Visibility of system status</h1>
 
-  </body>
+            <div class="row offset1">
+                <div class="content span3">   
+                    <p>On the Home page, highlights and mouse overs in both the navigation bar and links let the user know which texts on the page are accessible and clickable.
+
+                    <p>The font is small, especially in the navigation bar, which makes it relatively hard to read the text of important links and portals to other parts of the site.
+
+                    <p>On very select sub pages, navigating deeper from the secondary navigation menu will cause a tertiary menu to appear. This tertiary navigation bar is similar in nature to the secondary bar, and appears just below the secondary bar to show that the user is navigating within the menu above it. In this instance, the Home button takes the user back to the Home page of the secondary level, rather than the tertiary level. This is intuitive, but inconsistent with other uses of the Home button which link purely to the "About" section.
+
+                    <p>The right side bar, on select sub pages, allows users to access the links that were available in the body of the main home page, but these links lead to sections that look like they should be in the navigation bar. Highlighting-type effects on the section of the side bar where the user currently resides would be very helpful here.
+
+                    <p>Generally, the top navigation bar stays stationary while navigating the site, but although the title header lets the user know what section he/she is in, the navigation bar lacks any indication of where the user is located.
+
+                    <p>The Library and Research links in navigation bar lead to completely separate websites that are not branched to the main site, and there are no breadcrumbs that lead back to the homepage.  
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H1_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H1_JL.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="match">
+                <h1>Match between system and real world</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The language is overall favorable for the general user. There aren't any labels used for the links that don't immediately give an idea of what can be found behind them. 
+
+                    <p>The order of the navigation bar is appropriate for a university as it begins with News, then About Us, then Academics & Student Life sections, then Library & Research resource sections, and finally an Athletics section. 
+
+                    <p>The Home page orders the main body links in a relevantly chronological order, starting with Prospective Students.
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H2_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H2_AK.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="control">
+                <h1>User control and freedom</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>User control overall is not very good, especially with the links that lead to relevant but completely separate sites. There is no way to get back to the main university home page without manually clicking the browser’s back button once re-directed to these sites.
+
+                    <p>On the Home page, only select images are clickable and lead to various sections of the site.
+
+                    <p>The search function is hidden among other various links on top of the navigation bar, making it virtually inaccessible if not specifically looked for.
+
+                    <p>The navigation bar, when present, does a decent job of allowing the user to go to any of the links located in the bar, including the Home page.
+
+                    <p>The right side bar gives the user control to access any of the links that were present in the body of the main home page.
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H3_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H3_AK.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="consistency">
+                <h1>Consistency and standards</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The main aspects of consistency are found in the navigation bar and banner area, as well as in the right side bar found in select sub sections of the site (e.g. News, About Us, Academics, etc.)
+
+                    <p>The main aspect of inconsistency is found in the Library and Research links that lead to complete different sites with complete different designs.
+
+                    <p>There are a lot of consistency errors with the primary navigation bar. When you go to each of the links in the primary navigation bar, it should link to a related page with a banner at the top that matches the label of the link you just clicked.
+
+                    <p>However:
+
+                        <ul>
+                        <li>Clicking on “News” takes you to a page titled “Communications and Marketing"</li>
+
+                        <li>Clicking on “Academics” takes you to “Academic Affairs”</li>
+
+                        <li>Clicking on “Student Life” takes you to “Current Students”</li>
+
+                        <li>Clicking on “Library” takes you to a separate site called “Edith Garland Dupre Library"</li>
+
+                        <li>Clicking on “Research” takes you to a separate site with no banner that actually tells you that it’s a research page</li>
+
+                        <li>Clicking on “Athletics” takes you to “Athletics”</li>
+                        </ul>
+
+                    <p>The "About Us" and "Athletics" pages are the only links that have banners consistent with the links that lead to them.
+
+                    <p>Another problem is that the pages linked from the “Prospective Students … Faculty & Staff” buttons on the home page have a navigation bar at the top of the page to navigate within each new page. However, all of the links on this secondary nav bar will redirect you to the “About page,” and do not actually redirect you within the section you navigated to form the home page. This includes the “Home” button. It does not take you to the main page of the section, nor does it take you to the main university home page. It instead takes you to the home page of the “About” section.
+
+                    <p>Another set of tertiary links, different from the ones found in Student Life and Athletics is found when clicking News and Events from the News page. The first link, News and Events, changes to just News when clicking through any of the other neighboring tertiary links.
+
+                    <p>There is consistency of link mouse over effects with the content of link texts found in News and About Us, but not in relation to Academics, Student Life, and Athletics.
+
+                    <p>There is an inconsistency in mouse-over highlights for the navigation bar in the Home page versus others (Red and White background highlights).
+
+                    <p>The tertiary links found in the Student Life and Athletics sections are not found in the other sections.
+                </div>
+                
+                <div class="span2 thumbBox">
+                    
+                        <a href="images/H4_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H4_AK.jpg"></a>
+            
+                        <a href="images/H4a_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H4a_JL.jpg"></a>
+                
+                        <a href="images/H4a-1_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H4a-1_AK.jpg"></a>
+
+                        <a href="images/H4a-2_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H4a-2_AK.jpg"></a>
+                
+                        <a href="images/H4b-1_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H4b-1_JL.jpg"></a>
+
+                        <a href="images/H4b-2_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H4b-2_JL.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="prevention">
+                <h1>Error prevention</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>Library and Research links in navigation bar lead to completely separate sites with no breadcrumbs and no straightforward way of going back to previous location.
+
+                    <p>When using the search box that is located in a separate Search page, the results are found in another page that bolds the searched word in the results, but does not remind the user of the exact word that he/she searched.
+
+                    <p>The index section has the entire alphabet above every letter available to click and navigate to if the undesired letter was clicked.
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H5_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H5_AK.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="recognition">
+                <h1>Recognition, rather than recall</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>There are no breadcrumbs throughout site.
+
+                    <p>The titles on the pages let the user know of his/her current location, but nothing in the navigation bar or side bar is highlighted to let the user know this, forcing him/her to remember how he/she got there.
+
+                    <p>Visual cues (e.g. images) in the sections of the site help the user know what page he/she is on, but some are irrelevant to the page's content.
+
+                    <p>One of the links off of the main site is “Research”. This takes you to a separate web page that does not have a recognizable banner to let the user know that the page is about research. Therefore, in order to know that it is a research page, the user would either have to infer from the content (which is very taxing), or remember that they had previously clicked on a link labeled Research in order to get there. 
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H6_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H6_JL.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="efficiency">
+                <h1>Flexibility and efficiency of use</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>Maneuverability in the Index section via the alphabet links make it easy and efficient to navigate through the index.
+
+                    <p>The logo always leads back to home page.
+
+                    <p>The ULink link for students is located in the top right corner above the navigation bar, which allows experienced students to access deeper levels of the site if desired.
+
+                    <p>The search function is found via a link rather than a directly accessible box.
+
+                    <p>One nice features of the site is that there are several links on the home page that are specific to each type of user, namely "Prospective Students," "Current Students," etc. Each of these links takes the user immediately to a page full of relevant interests, so they can bypass a lot of information that doesn't pertain to them. This allows a lot of content to be present on the site, without bogging down users who only come for a specific purpose. 
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H7_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H7_AK.jpg"></a>
+
+                    <a href="images/H7_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H7_JL.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="aesthetics">
+                <h1>Aesthetics of design</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The navigation bar is decently minimal, because it only lists links that would be directly relevant to the university.
+
+                    <p>Many of the sections (like Current Students) have lots of links that are cluttered and only separated by bullet points rather than line by line. Some sections (like the Athletics section) are more minimalist and straightforward, and don’t force the user to choose exactly where he/she wants to go, but lets him/her choose a general area of interest first.
+
+                    <p>Another problem is that clicking on the “News” button takes you to a page titled “Communications and Marketing. Users have to click to an additional page called “News and Events” to actually get the news. This is very inefficient, and causes the label of the primary nav bar to be misleading.
+
+                    <p>An additional problem with the "Communications and Marketing" page is that a large portion of the real estate is dedicated to an advertisement for what appears to be a CD, and a subscription to a news mailing list. Not only are these elements ill-explained, but they take attention away from the actually news content, which is what users come to this page to see.
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H8_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H8_JL.jpg"></a>
+
+                    <a href="images/H8a-1_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H8a-1_AK.jpg"></a>
+
+                    <a href="images/H8a-2_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H8a-2_AK.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="recovery">
+                <h1>Recognizing & recovering from errors</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The search function sometimes offers alternate search choices if no results are found for a commonly misspelled word. However, when nothing is typed into the search box, no results are shown and the user is not notified of what he/she did wrong.
+
+                    <p>When trying to log on to ULink, an error message pops up when the username/password combination is incorrect. The error is in red, so it is readily apparent, and the language used in the error message is indicative of what the problem is. There is also a link titled "Problems Logging In?" beneath the fields that takes you to an FAQ page that could assist the user with troubleshooting. 
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H9_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H9_AK.jpg"></a>
+
+                    <a href="images/H9a-1_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H9a-1_JL.jpg"></a>
+
+                    <a href="images/H9a-2_JL.jpg" class="fancybox"><img alt="Screenshot" src="images/H9a-2_JL.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="help">
+                <h1>Help and documentation</h1>
+
+            <div class="row offset1">
+                <div class="content span3">
+                    <p>The search function sometimes offers alternate search choices if no results are found for a commonly misspelled word. However, when nothing is typed into the search box, no results are shown and the user is not notified of what he/she did wrong.
+
+                    <p>When trying to log on to ULink, an error message pops up when the username/password combination is incorrect. The error is in red, so it is readily apparent, and the language used in the error message is indicative of what the problem is. There is also a link titled "Problems Logging In?" beneath the fields that takes you to an FAQ page that could assist the user with troubleshooting. 
+                </div>
+
+                <div class="span2 thumbBox">
+                    <a href="images/H10_AK.jpg" class="fancybox"><img alt="Screenshot" src="images/H10_AK.jpg"></a>
+                </div>
+            </div>
+
+            <hr id="contact">
+                <h1>We are:</h1>
+
+            <div class="row offset1">
+                <div class="content span3 contact">
+                    <div>
+                        <h2><a href="images/contact-allan.jpg" class="fancybox" title="Allan Kwan">Allan Kwan</a></h2>
+                        <a href="mailto:adwk10@gmail.com">adwk10@gmail.com</a>
+                    </div>
+
+                    <div>
+                        <h2><a href="images/contact-jenny.jpg" class="fancybox" title="Jenny Lyons">Jenny Lyons</a></h2>
+                        <a href="mailto:jennymarie8403@gmail.com">jennymarie8403@gmail.com</a>
+                    </div>
+                    
+                    <div>
+                        <h2><a href="images/contact-adam.png" class="fancybox" title="Adam Powers">Adam Powers</a></h2>
+                        <a href="mailto:adam@powe.rs">adam@powe.rs</a>
+                    </div>
+                    And all rights are reserved (c) 2012.
+                </div>
+            </div>
+        </div>
+        </div> <!-- end container -->
+    </body>
 </html>

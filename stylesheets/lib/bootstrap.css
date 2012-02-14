@@ -126,13 +126,13 @@ a:hover {
   margin-left: 20px;
 }
 .span1 {
-  width: 60px;
+  width: 100px;
 }
 .span2 {
-  width: 140px;
+  width: 165px;
 }
 .span3 {
-  width: 220px;
+  width: 495px;
 }
 .span4 {
   width: 300px;
@@ -162,13 +162,13 @@ a:hover {
   width: 940px;
 }
 .offset1 {
-  margin-left: 100px;
+  margin-left: 95px;
 }
 .offset2 {
-  margin-left: 180px;
+  margin-left: 160px;
 }
 .offset3 {
-  margin-left: 260px;
+  margin-left: 500px;
 }
 .offset4 {
   margin-left: 340px;
@@ -183,7 +183,7 @@ a:hover {
   margin-left: 580px;
 }
 .offset8 {
-  margin-left: 660px;
+  margin-left: 670px;
 }
 .offset9 {
   margin-left: 740px;
